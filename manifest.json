@@ -18,6 +18,10 @@
     {   "run_at": "document_end",
         "matches": ["*://twitter.com/*"],
         "js": ["Twitter.js"]
+    },
+    {   "run_at": "document_end",
+        "matches": ["*://quora.com/*"],
+        "js": ["Quora.js"]
     }
   ],
   "permissions": [
