@@ -20,7 +20,7 @@
         "js": ["Twitter.js"]
     },
     {   "run_at": "document_end",
-        "matches": ["*://quora.com/*"],
+        "matches": ["*://www.quora.com/*"],
         "js": ["Quora.js"]
     }
   ],
@@ -28,10 +28,12 @@
      "tabs",
      "activeTab",
      "alarms",
+     "idle",
      "contentSettings",
      "*://twitter.com/*",
-     "*://www.facebook.com/*"
-    "*://www.quora.com/*"
+     "*://www.facebook.com/*",
+     "*://www.quora.com/"
+
   ]
   
 }
