@@ -27,6 +27,7 @@
      "contentSettings",
      "*://twitter.com/*",
      "*://www.facebook.com/*"
+    "*://www.quora.com/*"
   ]
   
 }
