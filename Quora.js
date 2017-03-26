@@ -1,6 +1,3 @@
-
-
-var isActive;
 var timer;
 window.onblur = function () { 
   isActive = true; 
@@ -9,24 +6,26 @@ clearInterval(timer);
 
 }; 
 
-
-window.onfocus = function () { 
-  isActive = true; 
+document.onclick= function() {
 clearInterval(timer);
-
- timer = window.setInterval(logout, 600000);
-
+timer = window.setInterval(logout, 30000);
+};
 
 document.onmousemove = function() {
 clearInterval(timer);
-   timer = window.setInterval(logout, 60000);
-}
+timer = window.setInterval(logout, 30000);
+};
 
-document.onmouseout = function() {
+
+document.onkeydown = function() {
 clearInterval(timer);
-   timer = window.setInterval(logout, 6000);
-}
+timer = window.setInterval(logout, 30000);
+};
 
+
+window.onfocus = function () { 
+clearInterval(timer);
+timer = window.setInterval(logout, 30000);
 };
 function logout() {
 	var toggledownbutton = document.getElementsByClassName("selector_input text")[0];
